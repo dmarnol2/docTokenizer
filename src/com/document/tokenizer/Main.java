@@ -18,16 +18,14 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter path of document to tag: ");
         String documentPath = scan.nextLine().trim();
+        File docToRead = getFile(documentPath);
 
         System.out.println("Enter path to lexicon: ");
         String lexiconPath = scan.nextLine().trim();
+        File lexiconToRead = getFile(lexiconPath);
 
-        File docToRead = createFile(documentPath);
-        File lexiconToRead = createFile(lexiconPath);
-        File outputDoc = createFile(changeExtension(documentPath, TAG_EXTENSION));
-
-        Scanner docScanner = buildReader(docToRead);
-        Scanner lexScanner = buildReader(lexiconToRead);
+        Scanner docScanner = buildScanner(docToRead);
+        Scanner lexScanner = buildScanner(lexiconToRead);
 
         while (docScanner.hasNextLine()) {
             documentData.add(docScanner.nextLine());
@@ -40,6 +38,7 @@ public class Main {
         }
         lexScanner.close();
 
+        File outputDoc = getFile(changeExtension(documentPath, TAG_EXTENSION));
         buildOutputDoc(documentData, lexMap, outputDoc);
     }
 
@@ -67,15 +66,15 @@ public class Main {
     }
 
 
-    public static Scanner buildReader(File document){
-        Scanner docReader = null;
+    public static Scanner buildScanner(File document){
+        Scanner docScanner = null;
         try {
-            docReader = new Scanner(document);
+            docScanner = new Scanner(document);
         } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
+            System.out.println("An error occurred in building Scanner.");
             e.printStackTrace();
         }
-        return docReader;
+        return docScanner;
     }
 
     public static String changeExtension(String fileName, String extension) {
@@ -86,16 +85,16 @@ public class Main {
         return fileName;
     }
 
-    public static File createFile(String url){
+    public static File getFile(String url){
         File newFile = new File(url);
         try {
             if (newFile.createNewFile()) {
-                System.out.println("File created: " + newFile.getName());
+                System.out.println("File created: " + newFile.getPath());
             } else {
-                System.out.println("File already exists.");
+                System.out.println("File " + newFile.getName() + " found.");
             }
         } catch (IOException e) {
-            System.out.println("An error occurred.");
+            System.out.println("There was an error finding or creating file.");
             e.printStackTrace();
         }
         return newFile;
