@@ -13,11 +13,11 @@ Download the zipfile or clone the program. To clone, in your terminal, navigate 
 
 OR if you have the zipfile, use this command in the directory where the zipfile is located. 
 
-`unzip docTokenizer.zip`
+`unzip docTokenizer-main.zip`
 
-After cloning or opening the zipfile, in your terminal enter these commands (Please note: please ensure the initial directory is correct. If you download the zip directly from Github, it is very likely the directory will be `docTokenizer-main` AND NOT `docTokenizer` as in the command below):
+After cloning or opening the zipfile, in your terminal enter these commands:
 
-`cd docTokenizer/src/com/document/tokenizer` 
+`cd docTokenizer-main/src/com/document/tokenizer` 
 
 `javac Main.java`
 
