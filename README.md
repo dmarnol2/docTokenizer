@@ -15,9 +15,15 @@ OR if you have the zipfile, use this command in the directory where the zipfile 
 
 `unzip docTokenizer-main.zip`
 
-After cloning or opening the zipfile, in your terminal enter these commands:
+If you cloned the repo, in Terminal enter:
 
-`cd docTokenizer-main/src/com/document/tokenizer` 
+`cd docTokenizer/src/com/document/tokenizer` 
+
+OR if you installed using zipfile, in Terminal enter:
+
+`cd docTokenizer-main/src/com/document/tokenizer`
+
+Then to compile and run the program, in Terminal enter:
 
 `javac Main.java`
 
