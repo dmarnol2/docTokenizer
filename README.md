@@ -24,4 +24,8 @@ In the terminal you will be prompted to enter the path of the document you would
 
 You will then be prompted to enter the path of the lexicon.
 
+After file locations have been entered, the program will scan the document against the lexicon and append any found words with it's associated token.
+
+Tagged words will have the format: `<word>/<token>`
+
 The program will write the output to file. The file will be located in the same directory as the scanned document and will have the same name but with the `.tag` extension.
