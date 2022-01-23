@@ -7,13 +7,23 @@ A new document is written to file as a copy of the original, replacing the found
 
 # To Run Program From Terminal
 
-In your terminal, navigate to the folder where you want the program downloaded.
-
-Enter the following commands:
+Download the zipfile or clone the program. To clone, in your terminal, navigate to the folder where you want the program downloaded and enter:
 
 `git clone https://github.com/dmarnol2/docTokenizer.git`
 
-`cd docTokenizer/src/com/document/tokenizer`
+OR if you have the zipfile, use this command in the directory where the zipfile is located. 
+
+`unzip docTokenizer-main.zip`
+
+If you cloned the repo, in Terminal enter:
+
+`cd docTokenizer/src/com/document/tokenizer` 
+
+OR if you installed using zipfile, in Terminal enter:
+
+`cd docTokenizer-main/src/com/document/tokenizer`
+
+Then to compile and run the program, in Terminal enter:
 
 `javac Main.java`
 
