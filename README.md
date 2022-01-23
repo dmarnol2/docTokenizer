@@ -1,13 +1,13 @@
-# Java Document Tokenizer
+# About Java Document Tokenizer
 This program scans a provided document for words found in a given lexicon.
 
-If a word is found, it is appended with the associated token.
+If a word is found, it is appended with it's associated token.
 
-A new document is written to file as a copy of the original, replacing the found word with it's tagged version and maintaining the original formattiing in all other cases.
+A new document is written to file as a copy of the original, replacing the found word with it's tagged version while maintaining the original formatting in all other cases.
 
 # To Run Program From Terminal
 
-In your terminal, navigate to folder where you want the program downloaded.
+In your terminal, navigate to the folder where you want the program downloaded.
 
 Enter the following commands:
 
