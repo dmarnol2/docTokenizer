@@ -12,9 +12,13 @@ In your terminal, navigate to folder where you want the program downloaded.
 Enter the following commands:
 
 `git clone https://github.com/dmarnol2/docTokenizer.git`
+
 `cd docTokenizer/src/com/document/tokenizer`
+
 `javac Main.java`
+
 `java Main.java`
+
 
 In the terminal you will be prompted to enter the path of the document you would like scanned.
 
