@@ -39,3 +39,9 @@ After file locations have been entered, the program will scan the document again
 Tagged words will have the format: `<word>/<token>`
 
 The program will write the output to file. The file will be located in the same directory as the scanned document and will have the same name but with the `.tag` extension.
+
+# Sample Output
+`Intervention: A stainless-steel greenfield vena/Anatomy-Desc caval/Anatomy-Adj|Anatomy-Desc filter was 
+successfully deployed below/Locative the level/Measure of the renal/Anatomy-Desc veins/Anatomy without
+incident within the inferior vena/Anatomy-Desc cava/Anatomy|Anatomy-Desc. The patient tolerated 
+the procedure without complication.`
