@@ -11,8 +11,7 @@ Download the zipfile or clone the program. To clone, in your terminal, navigate 
 
 `git clone https://github.com/dmarnol2/docTokenizer.git`
 
-# OR
-if you have the zipfile, use this command in the directory where the zipfile is located. 
+OR if you have the zipfile, use this command in the directory where the zipfile is located. 
 
 `unzip docTokenizer.zip`
 
